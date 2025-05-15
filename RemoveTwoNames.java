@@ -7,18 +7,18 @@ public class RemoveTwoNames {
 
 	public static void main(String[] args) {
 		
-		Queue<String> queue = new LinkedList<>();
-		
-		queue.add("Alice");
-        queue.add("Bob");
-        queue.add("Charlie");
-        queue.add("Diana");
+		LinkedList<String> list = new LinkedList<>();
         
-        System.out.println(queue);
+        	list.add("Alice");
+        	list.add("Bob");
+        	list.add("Charlie");
+        	list.add("Diana");
         
-        queue.poll();
-        queue.poll();
-
-        System.out.println(queue);
+        	System.out.println("Initial LinkedList: " + list);
+        
+        	if (!list.isEmpty()) list.removeFirst();
+        	if (!list.isEmpty()) list.removeFirst();
+        
+        	System.out.println("LinkedList after removing two names: " + list);
 	}
 }
